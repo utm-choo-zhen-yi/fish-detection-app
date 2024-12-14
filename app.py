@@ -6,6 +6,9 @@ from ultralytics import YOLO
 import tempfile
 import os
 
+# Ensure OpenCV is installed
+os.system("pip install opencv-python-headless==4.10.0.84")
+
 # Load YOLO model
 MODEL_PATH = 'fish_detection_model.pt'
 model = YOLO(MODEL_PATH)
