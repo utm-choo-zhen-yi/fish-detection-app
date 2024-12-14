@@ -1,8 +1,4 @@
 import os
-
-# Ensure OpenCV is installed
-os.system("pip install opencv-python-headless==4.10.0.84")
-
 import streamlit as st
 import cv2
 import numpy as np
