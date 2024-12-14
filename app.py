@@ -1,4 +1,10 @@
 import os
+import subprocess
+
+# Check if libGL.so.1 is available
+if "libGL.so.1" not in os.listdir("/usr/lib/x86_64-linux-gnu/"):
+    subprocess.check_call(["sudo", "apt-get", "install", "-y", "libgl1-mesa-glx"])
+
 import streamlit as st
 import cv2
 import numpy as np
