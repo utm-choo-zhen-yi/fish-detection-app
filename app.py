@@ -1,13 +1,14 @@
+import os
+
+# Ensure OpenCV is installed
+os.system("pip install opencv-python-headless==4.10.0.84")
+
 import streamlit as st
 import cv2
 import numpy as np
 import csv
 from ultralytics import YOLO
 import tempfile
-import os
-
-# Ensure OpenCV is installed
-os.system("pip install opencv-python-headless==4.10.0.84")
 
 # Load YOLO model
 MODEL_PATH = 'fish_detection_model.pt'
